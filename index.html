@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="nav-link nav-btn"><img src="power.png" /></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#section--1" class="nav-link">About us</a></li>
+          <li><a href="#section--2" class="nav-link">Diets</a></li>
+          <li><a href="#section--4" class="nav-link">Gym</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <div class="modal hid">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Ask us your question</h2>
+      <form class="modal__form">
+        <label>Email Address</label>
+        <input type="text" />
+        <label>Question</label>
+        <textarea name="message" rows="1"></textarea>
+
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hid"></div>
+
+    <main>
+      <section class="section-container">
+        <div class="hero-container">
+          <div class="hero-container-inner">
+            <h1>shape yourself</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              vitae recusandae quod distinctio, magnam natus!
+            </p>
+            <div class="btn-container">
+              <button class="btn btn--scroll-to">Membership &#8595;</button>
+              <button class="btn btn--show-modal">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-text" id="section--1">
+        <div class="container gym-about">
+          <h1>Power Fitness & Spa</h1>
+          <div class="text-p">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae culpa ex magni perferendis dignissimos rem ipsum nam
+              quae, animi debitis odio officia quisquam voluptatem aliquid et
+              porro voluptates ea non consequuntur minima consequatur. Quos qui
+              repellendus recusandae? Doloremque pariatur dolores excepturi,
+              rerum adipisci, sit blanditiis tenetur maiores non corrupti
+              repellendus quasi quae cupiditate voluptatibus aperiam numquam
+              culpa dolorem, et fugiat consequuntur harum repellat expedita.
+              Ullam nemo, nostrum sed incidunt, velit molestiae numquam
+              excepturi asperiores itaque illum corrupti! Sequi voluptatem quos
+              accusamus quasi ducimus saepe ex laboriosam voluptas, perferendis
+              soluta pariatur natus modi reprehenderit nemo dolore dolorum
+              perspiciatis quo blanditiis nihil!
+            </p>
+          </div>
+          <div class="btn-about">
+            <button class="btn--about">About Power</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="diets" id="section--2">
+        <div class="container center-text">
+          <h1 class="diets-heading">
+            Have our fitness instructors create your fitness workout and diet!
+          </h1>
+        </div>
+
+        <div
+          class="mobile-container container grid grid--2-cols margin-bottom-"
+        >
+          <div class="diet">
+            <img src="gain-muscle.jpg" class="diet-img" />
+
+            <div class="diet-content">
+              <div class="diet-tags">
+                <span class="tag tag--gain-muscle">Muscle</span>
+                <span class="tag tag--calories">Calories</span>
+              </div>
+
+              <p class="diet-title">Gain Muscle</p>
+
+              <ul class="diet-attributes">
+                <li class="diet-attribute">
+                  <i class="uil uil-dumbbell diet-icon"></i>
+                  <span>Get ready to train!</span>
+                </li>
+                <li class="diet-attribute">
+                  <i class="uil uil-utensils diet-icon"></i>
+                  <span>Get ready to eat!</span>
+                </li>
+                <li class="diet-attribute">
+                  <ion-icon name="star-outline" class="diet-icon"></ion-icon>
+                  <span><strong>4.7</strong> rating (783)</span>
+                </li>
+
+                <div class="diet-btn-container">
+                  <button class="diet-btn">Start your diet!</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diet">
+            <img src="lose-weight.jpg" class="diet-img" />
+
+            <div class="diet-content">
+              <div class="diet-tags">
+                <span class="tag tag--gain-muscle">Training</span>
+                <span class="tag tag--calories">Low Calories</span>
+              </div>
+
+              <p class="diet-title">Lose Weight</p>
+
+              <ul class="diet-attributes">
+                <li class="diet-attribute">
+                  <i class="uil uil-dumbbell diet-icon"></i>
+                  <span>Get ready to train!</span>
+                </li>
+                <li class="diet-attribute">
+                  <i class="uil uil-utensils diet-icon"></i>
+                  <span>Start eating healthy!</span>
+                </li>
+                <li class="diet-attribute">
+                  <ion-icon name="star-outline" class="diet-icon"></ion-icon>
+                  <span><strong>4.8</strong> rating (834)</span>
+                </li>
+
+                <div class="diet-btn-container">
+                  <button class="diet-btn">Start your diet!</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gym-membership" id="section--3">
+        <div class="container">
+          <h1 class="diets-heading">Get your gym membership!</h1>
+        </div>
+
+        <div
+          class="mobile-container container grid grid--2-cols margin-bottom-"
+        >
+          <div class="pricing-plan pricing-plan--monthly">
+            <header class="plan-header">
+              <p class="plan-name">Membership for a Month</p>
+              <p class="plan-price">
+                <span>$</span>
+                30
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>12 sessions</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>train from 9:00 to 15:00</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="close-outline" class="list-icon"></ion-icon>
+                <span>Free spa</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Start training</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--year">
+            <header class="plan-header">
+              <p class="plan-name">Membership for a Year</p>
+              <p class="plan-price">
+                <span>$</span>
+                360
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Unlimited sessions</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>train 24/7</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free spa</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Start training</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="section--4">
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <img class="testimonial-img" src="photo-1.jpg" />
+
+              <div class="testimonial-text">
+                <h1>Join our group training!</h1>
+                <button class="carousel-btn">Take a look</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <img class="testimonial-img" src="photo-2.jpg" />
+              <div class="testimonial-text">
+                <h1>Spa</h1>
+                <button class="carousel-btn">Take a look</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <img class="testimonial-img" src="photo-3.jpg" />
+              <div class="testimonial-text">
+                <h1>Trainers</h1>
+                <button class="carousel-btn">Take a look</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <img class="testimonial-img" src="photo-4.jpg" />
+              <div class="testimonial-text">
+                <h1>Equipment</h1>
+                <button class="carousel-btn">Take a look</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&#8592;</button>
+          <button class="slider__btn slider__btn--right">&#8594;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" src="power.png" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &#169; by PowerGym, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <div class="contacts">
+            <p class="address">132 Boulevard Macedonia, 4th Floor, Sofia</p>
+
+            <p>
+              <a href="#" class="footer-link">+359883233861</a><br />
+
+              <a href="#" class="footer-link">powergym@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">About PowerGym</a>
+            </li>
+            <li><a href="#" class="footer-link">For Business</a></li>
+            <li><a href="#" class="footer-link">Partners</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Information</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">Frequently asked questions</a>
+            </li>
+            <li><a href="#" class="footer-link">MultiSport Card</a></li>
+            <li><a href="#" class="footer-link">First step into the gym</a></li>
+            <li><a href="#" class="footer-link">Profile</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--  -->
+    </footer>
+  </body>
+</html>

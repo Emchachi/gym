@@ -1,0 +1,386 @@
+/************************************/
+/* BELOW 1344px (Smaller desktops) */
+/************************************/
+
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 100rem;
+    transform: translate(-40%, -50%);
+  }
+
+  .hero-container-inner h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  /* MODAL */
+
+  .modal {
+    max-width: 40rem;
+    padding: 1rem;
+  }
+
+  .modal__form {
+    gap: 1.2rem;
+    margin: 0;
+  }
+
+  .modal__form,
+  .modal__form textarea {
+    padding: 1rem;
+  }
+
+  .btn--close-modal {
+    top: -1rem;
+    right: 0;
+    padding: 0.5rem;
+  }
+
+  /*****************/
+  .hero-container {
+    max-width: 60rem;
+    left: 50%;
+    transition: all 0.5s ease;
+  }
+
+  .hero-container-inner {
+    left: 100%;
+    transition: all 0.4s ease;
+  }
+
+  .hero-container-inner h1 {
+    font-size: 6rem;
+  }
+
+  .btn--about::after {
+    top: 9px;
+  }
+
+  /*****************/
+
+  /* NAVBAR */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+    /* Hide navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-list li:last-child {
+    padding: 0;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /*****************/
+
+  /* Hero Section */
+
+  .hero-container .hide {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .hero-container-inner .hide {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .gym-about h1 {
+    margin-bottom: 0;
+  }
+
+  .text-p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  .hero-container-inner h1 {
+    font-size: 4.2rem;
+  }
+
+  .hero-container-inner p {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.6rem 2rem;
+  }
+
+  /*****************/
+
+  /* DIETS */
+
+  /*****************/
+
+  /* MEMBERSHIP */
+
+  .diets-heading {
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    justify-items: center;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing-plan--year::after {
+    top: 5%;
+    right: -20%;
+  }
+
+  .pricing-plan--monthly {
+    justify-self: center;
+  }
+
+  .gym-membership {
+    padding: 0;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .mobile-container {
+    padding: 0 1.8rem;
+  }
+
+  /*****************/
+
+  /* SLIDER */
+
+  .testimonial img {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .testimonial-text {
+    width: 100%;
+  }
+
+  .testimonial-text h1 {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+
+  .carousel-btn {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+  }
+
+  .carousel-btn::after {
+    top: 4px;
+  }
+
+  .carousel-btn:hover {
+    padding-right: 1.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .slider__btn {
+    height: 2.2rem;
+    width: 2.2rem;
+    font-size: 1.8rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dots {
+    bottom: 25%;
+  }
+
+  .testimonial {
+    position: unset;
+  }
+
+  /*****************/
+
+  /* FOOTER */
+  .grid--footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 1.6rem;
+  }
+
+  .copyright {
+    margin-top: 1.8rem;
+  }
+
+  .footer-heading {
+    margin-bottom: 2.2rem;
+  }
+
+  .address {
+    margin-bottom: 1.2rem;
+  }
+
+  .grid {
+    row-gap: 4.2rem;
+  }
+
+  /*****************/
+}
+
+@media (max-width: 30em) {
+  .hero-container {
+    max-width: 30rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal {
+    max-width: 35rem;
+    width: 100%;
+  }
+
+  .modal__header {
+    font-size: 2.6rem;
+    margin-bottom: 2.35rem;
+  }
+
+  .modal__form input {
+    padding: 0;
+  }
+
+  .modal__form,
+  .modal__form textarea {
+    padding: 0;
+  }
+
+  .btn {
+    padding: 1.2rem;
+  }
+
+  .diet-btn {
+    padding: 1.4rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .testimonial img {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .testimonial-text {
+    width: 100%;
+  }
+
+  .testimonial-text h1 {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+
+  .carousel-btn {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding: 0.6rem;
+  }
+
+  .carousel-btn::after {
+    top: 5px;
+  }
+
+  .carousel-btn:hover {
+    padding-right: 1.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .slider__btn {
+    height: 2.6rem;
+    width: 2.6rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dots {
+    bottom: 25%;
+  }
+
+  .testimonial {
+    position: unset;
+  }
+}
