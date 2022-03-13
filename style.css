@@ -281,6 +281,14 @@ body {
   border: none;
 }
 
+.btn--scroll-to:hover {
+  background-color: #e8590c;
+}
+
+.btn--show-modal:hover {
+  background-color: #e8590c;
+}
+
 .btn {
   font-size: 2.4rem;
   background-color: #e67700;
