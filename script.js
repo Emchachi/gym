@@ -96,6 +96,7 @@ const slider = function () {
       activateDot(slide);
     }
   });
+
   const interval = setInterval(nextSlide, 3000);
 };
 slider();
@@ -224,4 +225,12 @@ btnNavEl.addEventListener("click", function (e) {
   } else {
     hideEl.classList.remove("hid");
   }
+});
+
+const navLinks = document.querySelectorAll(".nav-item");
+navLinks.forEach((i) => {
+  i.addEventListener("click", () => {
+    headerEl.classList.toggle("nav-open");
+    hideEl.classList.remove("hid");
+  });
 });
